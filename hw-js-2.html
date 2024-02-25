@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+// - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
+
+    let array = ['petro' , 'andriy' , 'mukola' , 'sergiy' , 'anton' , 'yura' , 'pasha' , 'valentin' , 'markiyan' , 'oleg']
+    console.log(array[0])
+    console.log(array[1])
+    console.log(array[2])
+    console.log(array[3])
+    console.log(array[4])
+    console.log(array[5])
+    console.log(array[6])
+    console.log(array[7])
+    console.log(array[8])
+    console.log(array[9])
+
+// - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre
+
+    const book1 = {
+        title : 'Енеїда',
+        pageCount : 473,
+        genre : 'Класична українська поезія'
+    }
+
+    const book2 = {
+        title : 'Кобзар',
+        pageCount : 114,
+        genre : 'Поезія'
+    }
+
+    const book3 = {
+        title : 'Лісова пісня',
+        pageCount : 224,
+        genre : 'Драма-феєрія'
+    }
+
+// - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
+
+    const Ownbook1 = {
+        title : 'Лісова пісня',
+        pageCount : 224,
+        genre : 'Драма-феєрія',
+        avtor : [
+            {
+                name : 'Іван Котляревський',
+                age : 71
+            }
+        ]
+    }
+
+    const Ownbook2 = {
+        title : 'Кобзар',
+        pageCount : 114,
+        genre : 'Поезія',
+        avtro : [
+            {
+                name : 'Тарас Шевченко',
+                age : 47
+            }
+        ]
+    }
+
+    const Ownbook3 = {
+        title : 'Лісова пісня',
+        pageCount : 224,
+        genre : 'Драма-феєрія',
+        avtor : [
+            {
+                name : 'Лариса Косач-Квітка',
+                age : 42
+            }
+        ]
+    }
+
+// - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+
+    let people1 = {
+        name : array[0],
+        username : 'PetroSchur',
+        password : 435435893489
+    }
+
+    let people2 = {
+        name : array[1],
+        username : 'andriy2019',
+        password : 435435893489
+    }
+
+    let people3 = {
+        name : array[2],
+        username : 'mukola2000',
+        password : 4353435
+    }
+
+    let people4 = {
+        name : array[3],
+        username : 'andriyperforator300',
+        password : 52345234
+    }
+
+    let people5 = {
+        name : array[4],
+        username : 'antontop',
+        password : 52345234
+    }
+
+    let people6 = {
+        name : array[5],
+        username : 'masterpedikyura',
+        password : 23462346
+    }
+
+    let people7 = {
+        name : array[6],
+        username : 'pashadvabasha',
+        password : 2281337
+    }
+
+    let people8 = {
+        name : array[7],
+        username : 'produservalentin',
+        password : 6344623453
+    }
+
+    let people9 = {
+        name : array[8],
+        username : 'makaron3000',
+        password : 82547332572
+    }
+
+    let people10 = {
+        name : array[9],
+        username : 'olegdazlplayer',
+        password : 7257824526234
+    }
+
+console.log(people1.password)
+console.log(people2.password)
+console.log(people3.password)
+console.log(people4.password)
+console.log(people5.password)
+console.log(people6.password)
+console.log(people7.password)
+console.log(people8.password)
+console.log(people9.password)
+console.log(people10.password)
+
+
+// - Є змінна х, якій ви надаєте довільне числове значення. Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
+
+    let a = 1
+    if (a !==0 ) {
+        console.log('Virno')
+} else {
+        console.log('Ne virno')
+    }
+
+
+
+    let b = 0
+    if (b !==0 ) {
+        console.log('Virno')
+} else {
+        console.log('Ne virno')
+    }
+
+
+
+    let c = -3
+    if (c !==0 ) {
+        console.log('Virno')
+} else {
+        console.log('Ne virno')
+    }
+
+
+// - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число (в першу, другу, третю или четверту частину години)
+
+    let time = 44
+
+    if (time >=0 && time <= 15) {
+        console.log('Перша чверть години');
+    }else if (time >=16 && time <=30){
+        console.log('Друга чверть години');
+    } else if (time >=31 && time <= 45){
+        console.log('Третя чверть години');
+    }else if (time >= 46 && time <=59){
+        console.log('Четверта чверть години');
+    }else {
+        console.log('Невірне значення!');
+    }
+
+// - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+
+    let day = 15
+
+    if (day >=0 && day <= 10) {
+    console.log('Перша третина години');
+    }else if (day >=11 && day <=20){
+    console.log('Друга третина години');
+    } else if (day >=21 && day <= 31){
+    console.log('Третя третина години');
+    }else {
+    console.log('Невірне значення!');
+    }
+
+// - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
+
+    let week = prompt('Ведіть день тижня від 1 до 7 - ')
+
+    switch (week) {
+        case '1':
+            alert('Mondey');
+            break;
+
+        case '2':
+            alert('Tuesday');
+            break;
+
+        case '3':
+            alert('Wednesday');
+            break;
+
+        case '4':
+            alert('Thursday');
+            break;
+
+        case '5':
+            alert('Friday');
+            break;
+
+        case '6':
+            alert('Saturday');
+            break;
+
+        case '7':
+            alert('Sunday');
+            break;
+
+        default :
+            alert('Error 404 , wrong details!')
+    }
+
+// - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який, за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
+
+    let n = 0
+    n = n || 'default';
+    console.log(n);
+
+// - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
+
+    let coursesAndDurationArray = [
+        {title: 'JavaScript Complex', monthDuration: 5},
+        {title: 'Java Complex', monthDuration: 6},
+        {title: 'Python Complex', monthDuration: 6},
+        {title: 'QA Complex', monthDuration: 4},
+        {title: 'FullStack', monthDuration: 7},
+        {title: 'Frontend', monthDuration: 4}
+    ];
+    if (coursesAndDurationArray[0].monthDuration === 5){
+        console.log('Круто супер пупер дупер гіпер')
+    } else {
+        console.log('Не круто не супер не дупер не гіпер')
+    }
+
+</script>
+</body>
+</html>
